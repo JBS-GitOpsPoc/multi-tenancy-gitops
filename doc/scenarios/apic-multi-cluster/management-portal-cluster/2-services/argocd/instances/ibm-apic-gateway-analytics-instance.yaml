@@ -11,7 +11,7 @@ metadata:
     gitops.tier.layer: applications
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: gitops
     server: https://kubernetes.default.svc
   project: services
   source: # repoURL  and targetRevision populated by kustomize patches in 2-services/kustomization.yaml

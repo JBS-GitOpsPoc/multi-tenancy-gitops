@@ -36,7 +36,7 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: instana-agent
     server: https://kubernetes.default.svc
-  - namespace: openshift-gitops
+  - namespace: gitops
     server: https://kubernetes.default.svc
   - namespace: openshift-serverless
     server: https://kubernetes.default.svc
@@ -111,7 +111,7 @@ metadata:
     gitops.tier.layer: gitops
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: gitops
     server: https://kubernetes.default.svc
   project: services
   source: # repoURL  and targetRevision populated by kustomize patches in 2-services/kustomization.yaml
