@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: openshift-gitops
+  name: gitops
   annotations:
     argocd.argoproj.io/sync-wave: "200"
   labels:
@@ -16,7 +16,7 @@ spec:
     server: https://kubernetes.default.svc
   project: services
   source:
-    path: operators/openshift-gitops
+    path: operators/gitops
   syncPolicy:
     automated:
       prune: true

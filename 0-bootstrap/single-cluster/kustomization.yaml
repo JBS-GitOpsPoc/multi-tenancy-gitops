@@ -66,4 +66,4 @@ patches:
   patch: |-
     - op: replace
       path: /spec/destination/namespace
-      value: openshift-gitops
+      value: gitops
